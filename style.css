@@ -3,7 +3,7 @@ body {
 }
 
 .container {
-  background: #fff;
+
   max-width: 1512px;
   width: 100%;
   margin-inline: auto;
@@ -24,9 +24,35 @@ body {
   text-decoration: none;
 }
 
-.img {
+.image {
   max-width: 497px;
   width: 100%;
+  border-radius: 0px 0px 0px 240px;
+  position: relative;
+}
+
+.image img{
+ border-radius: inherit;
+ border: 5px solid #000;
+ position: relative;
+ z-index: 2;
+
+
+}
+
+.image-backdrop{
+
+  position: absolute;
+  width: calc(100% - 8px);
+  height: calc(100% - 19px);
+  background: #000;
+  top: -9px;
+  right: -7px;
+  border-radius: inherit;
+  z-index: -1;
+
+
+
 }
 
 .main {
